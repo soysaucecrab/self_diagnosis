@@ -3,7 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
-def self() :
+while 1:
+
     i = 0
 
     driver = webdriver.Chrome('D:\학교\자가진단\chromedriver.exe')
@@ -49,7 +50,6 @@ def self() :
 
     time.sleep(1)
 
-
     driver.find_element_by_xpath("//a[contains(@aria-label, '0')]").click()
     driver.find_element_by_xpath("//a[contains(@aria-label, '3')]").click()
     driver.find_element_by_xpath("//a[contains(@aria-label, '1')]").click()
@@ -67,7 +67,5 @@ def self() :
     driver.find_element_by_id("survey_q4a1").click()
 
     driver.find_element_by_id("btnConfirm").click()
-    
-while 1 :
-    self()
-    time.sleep(86400)
+
+    time.sleep(869395)
